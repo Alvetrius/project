@@ -1,42 +1,37 @@
+    body {
+      font-family: Arial;
+    }
+    
     .container {
-    width: 1280px;
-    margin: 0 auto;
-    border: 1px solid black;
+      width: 1280px;
+      margin: 0 auto;
   }
   
   .main-header {
     width: 100%;
-    padding: 50px;
+    border: 1px solid red;
+    background-color: #445163;
+    color: white;
+    display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
-    background-color: #445161;
-    color: #fff;
-    font-family: Arial;
-  }
-  
-  .main-header:after {
-    content: "";
-    display: block;
-    width: 100%;
-    clear: both;
+    padding: 50px;
   }
   
   .main-header-wrp {
-    width: 458px;
-    float: left;
-  /*   border: 1px solid white;
-     */}
+    box-sizing: border-box;
+  }
   
   .main-header-title {
-    margin: 0 0 10px 0;
     font-size: 60px;
     line-height: 1.2;
     font-weight: 400;
-    color: #ffffff;
+    margin: 0 0 50px 0;
   }
   
   .main-header-list {
-    padding: 0 0 0 20px;
     margin: 0 0 0 0;
+    padding: 0 0 0 0;
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
@@ -45,31 +40,202 @@
   .main-header-list-item {
     list-style-type: none;
     position: relative;
+    padding: 0 0 0 30px;
   }
   
-  .main-header-list-item:before {
+  .main-header-list-item::before {
     content: "";
     display: block;
     width: 15px;
     height: 15px;
-    background-image: url('https://cdn.icon-icons.com/icons2/510/PNG/512/checkmark_icon-icons.com_50429.png');
-    -webkit-background-size: cover;
-    background-size: cover;
-  /*   border: 1px solid #fff;
-     */  position: absolute;
+    border: 1px solid white;
+    background-image: url(../img/header_marker.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
     top: 10px;
-    left: -18px;
+    left: 0;
   }
   
   .main-header-img {
     display: block;
-    width: 469px;
-    min-height: 214px;
-    float: right;
+    width: 470px;
+    height: 215px;
+    border: 1px solid black;
     background-color: #fff;
   }
   
   .content {
-    
+    border: 3px solid green;
+  }
+
+  .about-product {
+    margin: 0;
+    padding: 50px;
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-product-wrp {
+    margin: 0 100px 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+  }
+
+  .about-product-title {
+    margin: 0 0 30px 0;
+    padding: 0 0 0 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+  }  
+
+  .about-product-text {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    text-align: justify;
+  }
+
+  .about-product-text:first-of-type {
+    margin: 0 0 20px 0;
+  }
+
+  .about-product-video {
+    display: block;
+    width: 430px;
+    height: 245px;
+    background-color: #445161;
+  }
+
+  .dignity {
+    margin: 0;
+    padding: 50px;
+    border: 2px solid purple;
+    background-color: #f4f6f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dignity-title {
+    margin: 0 0 30px 0;
+    padding: 0 0 0 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+  }
+
+  .dignity-list {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: block;
+    column-count: 2;
+    list-style-type: none;
+  }
+
+  .dignity-list-row {
+    margin: 0 0 0 0;
+    padding: 0 0 0 40px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    position: relative;
+  }
+
+  .dignity-list-row-interval {
+    margin: 0 0 35px 0;  
+  }
+
+  .dignity-list-row::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #445161;
+    background-image: url(../img/dignity_list_plus.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+  }
+
+  .screenshots {
+    border: 2px solid brown;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
+  .screenshots-title {
+    margin: 0 0 35px 0;
+    padding: 0 0 0 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    align-content: center;
+  }
+
+  .screenshots-wripper {
+    display: inline-block;
+    columns: 2;
+  }
+
+  .screenshots-figure {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .screenshots-figure:nth-of-type(1) {
+    margin: 0 0 30px 0;
+  }
+
+  .screenshots-figure:nth-of-type(3) {
+    margin: 0 0 30px 0;
+  }
+
+  .screenshots-image {
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-color: #445161;
+  }
+
+  .screenshots-describe {
+    margin: 0 0 0 15px;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+  }
+
+  .screenshots-describe-title {
+    margin: 0 0 15px 0;
+    padding: 0 0 0 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+  }
+
+  .screenshots-describe-text {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    text-align: justify;
+  }
