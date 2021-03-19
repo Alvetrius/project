@@ -585,7 +585,6 @@
 
   .contacts_wrp_list {
     margin: 0 0 35px 0;
-    padding: 0 0 0 30px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 24px;
@@ -594,17 +593,18 @@
     list-style-type: none;
     list-style-position: inside;
     position: relative;
+    padding: 0;
   }
 
   .contacts_wrp_list_row {
     margin: 0 0 20px 0;
-    padding: 0 0 0 0;
+    padding: 0 0 0 30px;
     box-sizing: border-box;
   }
 
   .contacts_wrp_list_row:last-of-type{
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    /* padding: 0 0 0 0; */
   }
 
   .contacts_wrp_list_row:nth-of-type(1)::before {
